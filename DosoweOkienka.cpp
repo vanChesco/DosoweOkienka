@@ -34,14 +34,14 @@ public:
 
 int unsigned Okienko::counter;
 
-Okienko::Okienko(int x, int y, std::string name, int value )
+Okienko::Okienko(int x, int y, std::string name, int value ) : x(x), y(y), nazwa(name), wartosc(value)
 {
 	counter++;
 
-	this -> x = x;
-	this -> y = y;
-			nazwa = name;
-			wartosc = value;
+//	this -> x = x;										//
+//	this -> y = y;										//	Zamiast nadawania wartosci w ten sposob, uzyta zostala lista incjalizacyjna powyzej
+//			nazwa = name;									//
+//			wartosc = value;								//
 
 	draw();
 }
